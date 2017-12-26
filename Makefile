@@ -14,3 +14,8 @@ mongodb:
 	rm -rf ./mongodb
 	git clone https://github.com/dockerfile/mongodb.git
 	cd ./mongodb && sudo docker build -t mongodb ./
+
+mysql@8.0:
+	rm -rf ./mysql
+	git clone https://github.com/docker-library/mysql.git
+	cd ./mysql && sudo docker build -t mysql_80 ./
