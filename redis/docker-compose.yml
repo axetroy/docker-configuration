@@ -1,0 +1,10 @@
+version: '3'
+services:
+  redis:
+    image: redis:4.0.9-alpine
+    restart: always
+    volumes:
+      - "./redis/data:/data" # 映射 postgre 的数据/配置地址，使得数据存储在本机硬盘
+      - "./redis.conf:/usr/local/etc/redis/redis.conf"
+    ports:
+      - 6379:6379   # postgres 默认端口 6379, 映射到本机的 6379

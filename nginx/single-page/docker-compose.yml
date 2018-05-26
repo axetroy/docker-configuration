@@ -1,0 +1,11 @@
+version: '3'
+services:
+  nginx_static:
+    image: nginx:1.13.8-alpine
+    restart: always
+    working_dir: /home/static
+    volumes:
+       - ./html:/usr/share/nginx/html # 映射静态文件目录 hml 到容器
+       - ./conf.d:/etc/nginx/conf.d # 映射 ginx 配置文件
+    ports:
+      - 10080:80 # 绑定容器的80端口到本的10080端口

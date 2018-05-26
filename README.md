@@ -1,34 +1,25 @@
-### Support
+### 记录常用的 Docker 配置
 
-- [x] Redis
-- [x] Postgres
-- [x] MongoDB
-- [x] MySQL
+### Web 服务器
 
-# Redis
+#### Nginx
 
-```bash
-make redis@4.0
-docker run -p 6379:6379 redis_40
-```
+* [静态文件服务器](#)
+* [单页面应用服务器](#)
+* [API 反向代理](#)
+* [负载均衡](#)
 
-# Postgres
+#### Node
 
-```bash
-make postgres@9.6
-docker run -p 65342:5342 postgres_96
-```
+* [NodeJs 核心](#)
+* [PM2 负载均衡](#)
+* [Pandora](#)
 
-# MongoDB
+#### Go
 
-```bash
-make mongodb
-docker run -p 27017:27017 mongodb
-```
+### 数据库
 
-# MySQL
-
-```bash
-make mysql@8.0
-docker run -p 3306:3306 mysql_80
-```
+* [Postgres](#)
+* [MySQL](#)
+* [Redis](#)
+* [MongoDB](#)

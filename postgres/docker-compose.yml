@@ -1,0 +1,9 @@
+version: '3'
+services:
+  pg:
+    image: postgres:10.4-alpine
+    restart: always
+    volumes:
+      - "./postgresql/data:/var/lib/postgresql/data" # 映射 postgre 的数据/配置地址，使得数据存储在本机硬盘
+    ports:
+      - 6432:5432   # postgres 默认端口 5432, 映射到本机的 6432

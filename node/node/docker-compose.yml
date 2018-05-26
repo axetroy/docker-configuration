@@ -1,0 +1,13 @@
+version: "2"
+services:
+  node:
+    image: "node:8"
+    user: "node"
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./:/home/node/app
+    command: "npm start"
+    ports:
+      - 8081:1080 # 绑定容器的1080端口到本级的8081端口上

@@ -1,0 +1,6 @@
+apps:
+  - script   : index.js
+    name     : demo
+    instances: max
+    exec_mode: cluster
+    restart  : true

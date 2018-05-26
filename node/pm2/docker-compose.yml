@@ -1,0 +1,13 @@
+version: "3"
+services:
+  node:
+    image: "keymetrics/pm2:latest-alpine"
+    user: "node"
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./:/home/node/app
+    command: ["pm2-dev", "start", "process.yml"]
+    ports:
+      - 8081:1080 # 绑定容器的1080端口到本级的8081端口上
