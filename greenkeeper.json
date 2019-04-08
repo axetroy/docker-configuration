@@ -1,0 +1,10 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "node/node/package.json",
+        "node/pm2/package.json"
+      ]
+    }
+  }
+}
