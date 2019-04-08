@@ -1,5 +1,7 @@
 ### 记录常用的 Docker 配置
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/axetroy/docker-configuration.svg)](https://greenkeeper.io/)
+
 ### Web 服务器
 
 #### Nginx
