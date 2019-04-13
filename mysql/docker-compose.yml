@@ -1,0 +1,16 @@
+version: "3"
+services:
+  mysql:
+    image: mysql:5.7
+    working_dir: /
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci #设置utf8字符集
+    environment:
+      MYSQL_DATABASE: vip
+      MYSQL_ROOT_PASSWORD: root #root管理员用户密码
+      MYSQL_USER: test #创建test用户
+      MYSQL_PASSWORD: test #设置test用户的密码
+    ports:
+      - "3306:3306" # 本机端口:容器端口
+    volumes:
+      - "./mysql/db:/var/lib/mysql"
+      - "./mysql/conf:/etc/mysql/conf.d"
