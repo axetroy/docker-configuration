@@ -20,6 +20,6 @@
 ### 数据库
 
 * [Postgres](https://github.com/axetroy/docker-server/blob/master/postgres/docker-compose.yml)
-* [MySQL]([#](https://github.com/axetroy/docker-server/blob/master/mysql/docker-compose.yml))
+* [MySQL](https://github.com/axetroy/docker-server/blob/master/mysql/docker-compose.yml)
 * [Redis](https://github.com/axetroy/docker-server/blob/master/redis/docker-compose.yml)
 * [MongoDB](https://github.com/axetroy/docker-server/blob/master/mongodb/docker-compose.yml)
