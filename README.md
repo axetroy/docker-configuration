@@ -27,5 +27,5 @@
 ### 社区成品
 
 * [Gitlab](#)
-* [Gite]([#](https://github.com/axetroy/docker-server/blob/master/gitea/docker-compose.yml))
+* [Gitea](https://github.com/axetroy/docker-server/blob/master/gitea/docker-compose.yml)
 * [Gogs](#)
