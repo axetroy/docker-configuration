@@ -23,9 +23,11 @@
 * [MySQL](https://github.com/axetroy/docker-server/blob/master/mysql/docker-compose.yml)
 * [Redis](https://github.com/axetroy/docker-server/blob/master/redis/docker-compose.yml)
 * [MongoDB](https://github.com/axetroy/docker-server/blob/master/mongodb/docker-compose.yml)
+* [sqlite](https://github.com/axetroy/docker-server/blob/master/sqlite/docker-compose.yml)
 
 ### 社区成品
 
 * [Gitlab](https://github.com/axetroy/docker-server/blob/master/gitlab/docker-compose.yml)
 * [Gitea](https://github.com/axetroy/docker-server/blob/master/gitea/docker-compose.yml)
 * [Gogs](https://github.com/axetroy/docker-server/blob/master/gogs/docker-compose.yml)
+* [禅道](#)

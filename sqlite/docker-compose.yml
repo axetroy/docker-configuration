@@ -1,0 +1,9 @@
+version: '3'
+services:
+  sqlite3:
+    image: zabbix/zabbix-proxy-sqlite3:alpine-4.2.1
+    restart: always
+    volumes:
+      - ./data:/var/lib/zabbix
+    ports:
+      - 12346:12346   # sqlite3 默认端口 12346, 映射到本机的 12346
