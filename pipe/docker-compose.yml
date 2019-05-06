@@ -1,0 +1,32 @@
+version: "3"
+
+services:
+  pipe:
+    image: b3log/pipe
+    working_dir: /opt/pipe/
+    ports:
+      - "5897:5897" # web 端口
+    restart: always
+    entrypoint:
+      - /opt/pipe/pipe
+      - --server=http://192.168.0.39:5897 # 写你的服务器地址
+      - --static_server=http://192.168.0.39:5897 # 写你的服务器地址
+      - --mysql=test:test@(mysql:3306)/pipe?charset=utf8mb4&parseTime=True&loc=Local
+      - --runtime_mode=prod
+    depends_on:
+      - mysql
+  mysql:
+    image: mysql:5.7
+    working_dir: /
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci #设置utf8字符集
+    environment:
+      MYSQL_DATABASE: pipe # 数据库名称
+      MYSQL_ROOT_PASSWORD: root #root管理员用户密码
+      MYSQL_USER: test #创建test用户
+      MYSQL_PASSWORD: test #设置test用户的密码
+    # 生产环境下，数据库不暴露接口
+    # ports:
+      # - "3306:3306" # 本机端口:容器端口
+    volumes:
+      - "./mysql/db:/var/lib/mysql"
+      - "./mysql/conf:/etc/mysql/conf.d"

@@ -31,3 +31,4 @@
 * [Gitea](https://github.com/axetroy/docker-server/blob/master/gitea/docker-compose.yml)
 * [Gogs](https://github.com/axetroy/docker-server/blob/master/gogs/docker-compose.yml)
 * [禅道](https://github.com/axetroy/docker-server/blob/master/zandao/docker-compose.yml)
+* [pipe](https://github.com/axetroy/docker-server/blob/master/pipe/docker-compose.yml)
