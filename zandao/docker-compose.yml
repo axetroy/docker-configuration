@@ -1,0 +1,17 @@
+version: "2"
+
+services:
+  zentao:
+    image: idoop/zentao:pro
+    ports:
+      - "9070:80" # web 端口
+      - "3306:3306" # MySQL 端口
+    environment:
+      # 指定管理员账号/密码
+      USER: "admin"
+      PASSWD: "12345678"
+      BIND_ADDRESS: "false"
+      # SMTP_HOST: "localhost smtp.exmail.qq.com"
+    volumes:
+      - ./data/zbox/:/opt/zbox
+    restart: always
