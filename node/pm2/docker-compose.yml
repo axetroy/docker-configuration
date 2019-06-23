@@ -9,5 +9,6 @@ services:
     volumes:
       - ./:/home/node/app
     command: ["pm2-dev", "start", "process.yml"]
+    max-size: "1g"
     ports:
       - 8081:1080 # 绑定容器的1080端口到本级的8081端口上
