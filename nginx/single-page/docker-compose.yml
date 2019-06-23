@@ -7,5 +7,6 @@ services:
     volumes:
        - ./html:/usr/share/nginx/html # 映射静态文件目录 hml 到容器
        - ./conf.d:/etc/nginx/conf.d # 映射 ginx 配置文件
+    max-size: "200m"
     ports:
       - 10080:80 # 绑定容器的80端口到本的10080端口
