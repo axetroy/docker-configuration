@@ -6,5 +6,6 @@ services:
     working_dir: /home/static
     volumes:
        - ./html:/usr/share/nginx/html # 映射静态文件目录 hml 到容器
+    max-size: "200m"
     ports:
       - 1080:80 # 绑定容器的80端口到本的1080端口
