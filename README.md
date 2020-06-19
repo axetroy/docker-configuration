@@ -4,32 +4,34 @@
 
 #### Nginx
 
-* [静态文件服务器](https://github.com/axetroy/docker-server/blob/master/nginx/static/docker-compose.yml)
-* [单页面应用服务器](https://github.com/axetroy/docker-server/blob/master/nginx/single-page/docker-compose.yml)
-* [API 反向代理](https://github.com/axetroy/docker-server/blob/master/nginx/api-proxy/docker-compose.yml)
-* [负载均衡](#)
+- [静态文件服务器](nginx/static/docker-compose.yml)
+- [单页面应用服务器](nginx/single-page/docker-compose.yml)
+- [API 反向代理](nginx/api-proxy/docker-compose.yml)
+- [负载均衡](#)
+
+#### Caddy
+
+- [基本](caddy/docker-compose.yml)
 
 #### Node
 
-* [NodeJs 核心](https://github.com/axetroy/docker-server/blob/master/node/node/docker-compose.yml)
-* [PM2 负载均衡](https://github.com/axetroy/docker-server/blob/master/node/pm2/docker-compose.yml)
-* [Pandora](#)
-
-#### Go
+- [NodeJs 核心](node/node/docker-compose.yml)
+- [PM2 负载均衡](node/pm2/docker-compose.yml)
+- [Pandora](#)
 
 ### 数据库
 
-* [Postgres](https://github.com/axetroy/docker-server/blob/master/postgres/docker-compose.yml)
-* [MySQL](https://github.com/axetroy/docker-server/blob/master/mysql/docker-compose.yml)
-* [Redis](https://github.com/axetroy/docker-server/blob/master/redis/docker-compose.yml)
-* [MongoDB](https://github.com/axetroy/docker-server/blob/master/mongodb/docker-compose.yml)
-* [sqlite](https://github.com/axetroy/docker-server/blob/master/sqlite/docker-compose.yml)
+- [Postgres](postgres/docker-compose.yml)
+- [MySQL](mysql/docker-compose.yml)
+- [Redis](redis/docker-compose.yml)
+- [MongoDB](mongodb/docker-compose.yml)
+- [sqlite](sqlite/docker-compose.yml)
 
 ### 社区成品
 
-* [Gitlab](https://github.com/axetroy/docker-server/blob/master/gitlab/docker-compose.yml)
-* [Gitea](https://github.com/axetroy/docker-server/blob/master/gitea/docker-compose.yml)
-* [Gogs](https://github.com/axetroy/docker-server/blob/master/gogs/docker-compose.yml)
-* [禅道](https://github.com/axetroy/docker-server/blob/master/zandao/docker-compose.yml)
-* [pipe](https://github.com/axetroy/docker-server/blob/master/pipe/docker-compose.yml)
-* [jenkins](https://github.com/axetroy/docker-server/blob/master/jenkins/docker-compose.yml)
+- [Gitlab](gitlab/docker-compose.yml)
+- [Gitea](gitea/docker-compose.yml)
+- [Gogs](gogs/docker-compose.yml)
+- [禅道](zandao/docker-compose.yml)
+- [pipe](pipe/docker-compose.yml)
+- [jenkins](jenkins/docker-compose.yml)
