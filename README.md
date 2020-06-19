@@ -32,3 +32,4 @@
 * [Gogs](https://github.com/axetroy/docker-server/blob/master/gogs/docker-compose.yml)
 * [禅道](https://github.com/axetroy/docker-server/blob/master/zandao/docker-compose.yml)
 * [pipe](https://github.com/axetroy/docker-server/blob/master/pipe/docker-compose.yml)
+* [jenkins](https://github.com/axetroy/docker-server/blob/master/jenkins/docker-compose.yml)

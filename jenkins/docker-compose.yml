@@ -1,0 +1,11 @@
+version: "3"
+services:
+  mysql:
+    image: jenkins/jenkins:lts
+    # environment:
+      # JENKINS_UC: http://mirror.xmission.com/jenkins/updates/update-center.json
+    ports:
+      - "8080:8080" # 本机端口:容器端口
+      - "50000:50000" # 本机端口:容器端口
+    volumes:
+      - ./jenkins_home:/var/jenkins_home
