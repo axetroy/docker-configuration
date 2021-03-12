@@ -1,7 +1,7 @@
 version: '3'
 services:
   nginx_static:
-    image: nginx:1.19.7-alpine
+    image: nginx:1.19.8-alpine
     restart: always
     working_dir: /home/static
     volumes:
