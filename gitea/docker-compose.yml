@@ -2,7 +2,7 @@ version: "3.2"
 
 services:
   web_gitea:
-    image: gitea/gitea:1.13.7
+    image: gitea/gitea:1.14.1
     restart: always
     volumes:
       - "./storage/data:/data"
